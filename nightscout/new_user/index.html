@@ -731,7 +731,11 @@
 
 <p>Now, click on "Choose a connection method" at the bottom of the form. Then, click on "Connect your application". Leave the default Driver and version and copy the displayed string. You can copy the string by clicking on the "Copy" button. This is is the last piece of information that we need from MongoDB Atlas.</p>
 <p>Before doing anything else, you need to replace some information in the string and note it down.</p>
-<p>For example, my string was <code>mongodb+srv://nightscout:&lt;password&gt;@nightscout.ztlke.mongodb.net/&lt;dbname&gt;?retryWrites=true&amp;w=majority</code>. I need to change <code>&lt;password&gt;</code> to my password and <code>&lt;dbname&gt;</code> to anything I like. The final result would be <code>mongodb+srv://nightscout:gatZ3V4B25j2T3rN@nightscout.ztlke.mongodb.net/nightscout?retryWrites=true&amp;w=majority</code>. This string contains all the information that Nightscout needs to connect to your newly connected cluster. Note it down and it will be required during the Heroku setup. This will be known as your <strong>MONGODB_URI</strong>.</p>
+<p align="center">
+<img src="../img/atlas10.png" width="450">
+</p>
+
+<p>For example, my string was <code>mongodb+srv://nightscout:&lt;password&gt;@nightscout.ztlke.mongodb.net/&lt;dbname&gt;?retryWrites=true&amp;w=majority</code>. I need to change <code>&lt;password&gt;</code> to my password and <code>&lt;dbname&gt;</code> to anything I like. The final result would be <code>mongodb+srv://nightscout:password123@nightscout.ztlke.mongodb.net/nightscout?retryWrites=true&amp;w=majority</code>. This string contains all the information that Nightscout needs to connect to your newly connected cluster. Note it down and it will be required during the Heroku setup. This will be known as your <strong>MONGODB_URI</strong>.</p>
 <h2 id="step-2-heroku-account">Step 2: Heroku Account<a class="headerlink" href="#step-2-heroku-account" title="Permanent link">⌁</a></h2>
 <p>Create an account at <a href="https://signup.heroku.com/login" target="_blank">Heroku's signup page</a>. </p>
 <p>Enter your name, email address, role ("Hobbyist" is fine) and choose "Node.js" as the Primary Development Language.  When you get all those entered, confirm that you are not a robot and click the blue "Create Free Account" button</p>
